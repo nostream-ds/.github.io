@@ -129,10 +129,45 @@ section {
 footer {
     text-align: center;
     border-top: 1px solid var(--fg-color);
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
     margin-top: 4rem;
     font-size: 0.8rem;
+}
+
+.imprint {
+    text-align: left;
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+    border: 1px solid var(--fg-color);
+    padding: 1.5rem;
+    text-transform: none; /* Bessere Lesbarkeit für Adressdaten */
+    background-color: var(--bg-color);
+}
+
+.imprint strong {
     text-transform: uppercase;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed var(--fg-color);
+    padding-bottom: 0.5rem;
+}
+
+.imprint a {
+    color: var(--fg-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.imprint a:hover {
+    color: var(--accent-color);
+}
+
+.footer-copyright {
+    text-transform: uppercase;
+    border-top: 1px dashed #333;
+    padding-top: 1.5rem;
+    color: #888;
 }
 
 @media (max-width: 768px) {
